@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KN.study</title>
+    <style>
+        body {
+            background-color: rgb(196, 196, 244)
+        }
+
+        #logo {
+            display: flex;
+            padding: 2;
+            margin: 0;
+            box-shadow: #9a60ec;
+        }
+
+        nav {
+            width: 100%;
+            height: 64px;
+            background: #8a98fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 9px 100px;
+        }
+
+        nav ul li a {
+            font-weight: 400;
+            color: #2f2b2b;
+            transition: 600ms;
+        }
+
+        nav ul li a:hover {
+            color: rgb(196, 196, 244);
+        }
+
+        .search {
+            float: right;
+            color: rgb(127, 216, 216);
+            padding: 12px 100px;
+        }
+
+        .navbar input {
+            border: 2px solid rgb(50, 38, 38);
+            padding: 50px 17px;
+            width: 129px;
+        }
+
+        .welcome {
+            width: 100%;
+            height: 785px;
+            background-image: url("https://images.pexels.com/photos/6990578/pexels-photo-6990578.jpeg?auto=compress&cs=tinysrgb&w=1600");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 1px #f1edf6;
+        }
+
+        .welcome h1 {
+            color: rgb(25, 29, 31);
+            font-weight: 100px;
+            font-size: 4rem;
+            font-language-override: inherit;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 1px 1px 1px rgb(255, 255, 186);
+
+        }
+
+        .our-services,
+        .Patnership {
+            width: 100%;
+            height: auto;
+            display: flex;
+            display: flex;
+            align-items: center;
+            padding: 0px 0px;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 300px;
+        }
+
+        .grid-product {
+            background: rgb(196, 196, 244);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+
+        }
+
+        .grid-product:hover>.grid-detail p:last-child {
+            color: #031724;
+        }
+
+        .grid-product:hover {
+            background: #ffffff;
+        }
+
+        .grid-product img {
+            width: 369px;
+        }
+
+        .grid-detail {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .grid-detail {
+            margin: 20px, 0;
+            text-align: center;
+        }
+
+        .grid-detail p:last-child {
+            transition: .5s;
+            margin-top: -20px;
+        }
+
+        .container {
+            width: -2px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .h2 {
+
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+
+        }
+
+        .backend.php {
+            width: 500px;
+            height: 400px;
+            align-items: center;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="" alt="KN.study">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Study</a></li>
+            <li class="item"><a href="#">Teach</a></li>
+            <li class="item"><a href="#">Earn</a></li>
+            <li class="item"><a href="#">Sign up / log in</a></li>
+
+            <div class="search">
+                <input type="text" name="search" id="search " placeholder="search this website">
+            </div>
+        </ul>
+    </nav>
+    <hr>
+    <section class="welcome">
+        <h1> Education is one thing no one can take away from you </h1>
+    </section>
+
+    <hr>
+
+    <section class="our-services">
+        <div class="container">
+            <h2>our services</h2>
+            <div class="grid">
+
+                <div class="grid-product">
+                    <img
+                        src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="grid-detail">
+                        <p>Study</p>
+
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="grid-detail">
+                        <p>Teaching</p>
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <div class="detail">
+                        <p>Earn</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="Patnership">
+        <div class="container">
+            <h2>Patnership</h2>
+            <div class="grid">
+                <div class="grid-product">
+                    <img src="unacdemy-removebg-preview.png">
+                    <a href="http://unacademy.com/" target="_blank"> unacademy </a>
+
+                </div>
+
+                <div class="grid-product">
+                    <img src="Byjus-removebg-preview.png">
+                    <a href="https://byjus.com/" target="_blank"> Bayju </a>
+
+                </div>
+
+                <div class="grid-product">
+                    <img src="ms-removebg-preview.png">
+                    <a href="https://learn.microsoft.com/" target="_blank"> Microsoft learning </a>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <hr>
+
+    <h2>Contact us</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="Name">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            Birthady: <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            Gender: Male: <input type="radio" name="myge
+            "> Female: <input type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+            Write about youself : <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
